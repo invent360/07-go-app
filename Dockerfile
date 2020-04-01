@@ -58,8 +58,8 @@ RUN set -eux; \
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" "$GOPATH/dist" "$GOPATH/src/github.com/invent360/07-go-app/app" && chmod -R 777 "$GOPATH"
-WORKDIR $GOPATH/src/github.com/invent360/07-go-app/app
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" "$GOPATH/dist" "$GOPATH/src/github.com/invent360/07-go-app" && chmod -R 777 "$GOPATH"
+WORKDIR $GOPATH/src/github.com/invent360/07-go-app
 
 # Copy the local package files to the container's workspace.
 ADD . .

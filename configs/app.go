@@ -3,7 +3,7 @@ package configs
 import (
 	"net/http"
 
-	"github.com/invent360/07-go-app/app/controllers"
+	"github.com/invent360/07-go-app/controllers"
 )
 
 // StartApp starts new go app

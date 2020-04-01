@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/invent360/07-go-app/app/utils"
+	"github.com/invent360/07-go-app/utils"
 
-	"github.com/invent360/07-go-app/app/models"
+	"github.com/invent360/07-go-app/models"
 )
 
 var (

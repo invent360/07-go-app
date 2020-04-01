@@ -2,11 +2,11 @@ package controllers
 
 import (
 	"encoding/json"
-	"github.com/invent360/07-go-app/app/utils"
+	"github.com/invent360/07-go-app/utils"
 	"net/http"
 	"strconv"
 
-	"github.com/invent360/07-go-app/app/services"
+	"github.com/invent360/07-go-app/services"
 )
 
 // GetUser Handles user request

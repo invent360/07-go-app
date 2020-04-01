@@ -1,10 +1,10 @@
 package services
 
 import (
-	"github.com/invent360/07-go-app/app/utils"
+	"github.com/invent360/07-go-app/utils"
 
-	"github.com/invent360/07-go-app/app/models"
-	"github.com/invent360/07-go-app/app/repositories"
+	"github.com/invent360/07-go-app/models"
+	"github.com/invent360/07-go-app/repositories"
 )
 
 // GetUser Fetches user by Id
