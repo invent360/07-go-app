@@ -58,7 +58,7 @@ RUN set -eux; \
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
-RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" "$GOPATH/dist" "$GOPATH/src/github.com/invent360/07-go-app" && chmod -R 777 "$GOPATH"
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" "$GOPATH/dist" && chmod -R 777 "$GOPATH"
 WORKDIR $GOPATH/src/github.com/invent360/07-go-app
 
 # Copy the local package files to the container's workspace.
@@ -72,16 +72,8 @@ ADD . .
 RUN go get -d -v ./...
 
 # Install the package
-RUN go install -v ./..
-
-# Build the application
-#RUN go build
-
-RUN ls $GOPATH/bin
-
-RUN ls $GOPATH/src
+RUN go install -v ./...
 
 EXPOSE 8080 
 # Command to run the executable
-#ENTRYPOINT ["main"]
-CMD ["app"]
+ENTRYPOINT ["07-go-app"]
