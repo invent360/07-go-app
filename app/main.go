@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/07-go-app/configs"
+	"github.com/invent360/07-go-app/configs"
 )
 
 func main() {

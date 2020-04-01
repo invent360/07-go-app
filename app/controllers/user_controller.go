@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"utils"
 
-	"github.com/07-go-app/services"
+	"github.com/invent360/07-go-app/services"
 )
 
 // GetUser Handles user request
